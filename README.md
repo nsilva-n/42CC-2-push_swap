@@ -35,6 +35,7 @@ This project is a test of your algorithmic ingenuity, requiring you to balance e
 ## Features
 
 *Marvel at the capabilities of push_swap:*
+
 - **Sorting Algorithms**: Implement custom sorting strategies to minimize operations.
 - **Stack Management**: Efficiently manipulate two stacks to achieve the desired order.
 - **Predefined Operations**: Use a limited set of operations to solve the problem.
@@ -51,6 +52,7 @@ This project is a test of your algorithmic ingenuity, requiring you to balance e
 ## Getting Started
 
 *Prepare your arsenal and set forth on your quest!*
+
 Clone this repository and navigate to the `push_swap` directory:
 ```bash
 git clone https://github.com/nsilva-n/42CC-2-push_swap.git
@@ -103,10 +105,18 @@ Experiment with different approaches and analyze their performance to find the m
 
 *Test thy creation to ensure its strength and precision:*
 
-Create your own test scenarios to ensure correctness and efficiency. For example:
+Run the provided test cases to validate your implementation:
 ```bash
-./push_swap 3 2 5 1 4
+./push_swap <list_of_integers> | ./checker_linux <list_of_integers>
 ```
+
+### Using `./checker_linux`
+- The `./checker_linux` program is a validation tool that reads the output of your `push_swap` program and checks whether the list of integers is sorted correctly.
+- Example usage:
+  ```bash
+  ARG="4 3 2 1"; ./push_swap $ARG | ./checker_linux $ARG
+  ```
+  If the program is correct, you will see `OK`. Otherwise, it will output `KO`.
 
 ### Visualizing the Process
 To visually debug and explore your solution, use the [Push Swap Visualizer](https://push-swap42-visualizer.vercel.app/).  
